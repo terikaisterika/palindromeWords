@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Тест</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <form name="getPalindrome">
+      <h3>Получить слова-палиндромы</h3>
+      <label for="types">Выбрать тип палиндромов</label>
+      <div id="types">
+        <label for=""
+          >Любые палиндромы
+          <input type="radio" name="type-text" value="any" checked />
+        </label>
+        <br />
+        <label for=""
+          >Не учитывать палиндромы из цифр или содержащие цифры
+          <input type="radio" name="type-text" value="only-text" />
+        </label>
+      </div>
+      <label for="minMax">Выбор длины палиндромов</label>
+      <div id="minMax">
+        <label"
+          >Выводить палиндромы максимальной длины
+          <input type="radio" name="type-length" value="max" checked />
+        </label>
+        <br />
+        <label for=""
+          >Выводить палиндромы минимальной длины
+          <input type="radio" name="type-length" value="min" />
+        </label>
+      </div>
+      <label>
+        <textarea
+          id="list" 
+          name="list"
+          required
+          placeholder="Введите слова, разделяя запятой"
+        ></textarea>
+      </label>
+      <br />
+      <input type="submit" id="sendForm" value="Получить палиндромы" />
+      <br />
+      <h3>Результат</h3>
+      <div id="result"></div>
+      <br />
+    </form>
+    <script src="./src/script.js"></script>
+  </body>
+</html>

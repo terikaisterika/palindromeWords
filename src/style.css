@@ -1,0 +1,28 @@
+body{
+  font-size: 18px;
+}
+#result {
+  font-weight: bold;
+  
+  border: 10px;
+}
+
+input{
+  padding: 8px;
+  border-radius: 5px;
+  margin: 8px 0;
+}
+#list {
+  border: 1px solid black;
+  padding: 5px;
+  resize: none;
+  max-width: 500px; /* Задаем максимальную ширину */
+  max-height: 300px; /* Задаем максимальную высоту */
+  min-width: 400px; /* Задаем минимальную ширину */
+  min-height: 100px; /* Задаем минимальную высоту */
+}
+#types, #minMax {
+  
+  margin: 10px;
+  padding: 5px;
+}
